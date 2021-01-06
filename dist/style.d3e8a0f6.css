@@ -33,16 +33,52 @@ body {
 
 
 .globalHeader {
+  position: relative;
   margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.baidu ,.google{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.globalHeader >.touchlogo{
+  position: absolute;
+  top: 32px;
+  right: 20px;
+  font-size: 22px;
+  cursor: pointer;
+
 }
 @media(min-width:500px){
   .globalHeader {
     margin: 60px 0 60px 0;
+  
   }
+  .globalHeader>.searchlogo{
+    justify-content: center;
+  }
+  .globalHeader >.touchlogo{
+    right: 34%;
+  }
+}
+.globalHeader>.searchlogo{
+  display: flex;
+  width: 60%;
+  height: 71px;
+
 }
 .searchForm {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  padding-top: 15px;
 }
 @media(min-width:500px){
   .searchForm{
@@ -56,7 +92,7 @@ body {
   margin-right: 10px;
   height: 40px;
   padding: 0 10px;
-  border: 1px solid #dddddd;
+  border: 1px solid skyblue;
   border-radius: 4px;
 }
 
@@ -81,6 +117,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
 }
 @media(min-width:500px){
   .siteList{
@@ -163,4 +200,4 @@ body {
 }
 
 
-/*# sourceMappingURL=style.4f219aca.css.map */
+/*# sourceMappingURL=style.d3e8a0f6.css.map */
