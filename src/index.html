@@ -21,6 +21,28 @@
 
   <body>
     <header class="globalHeader">
+      <div class="touchlogo">
+        <div class="baidu">
+          <svg class="icon" >
+            <use xlink:href="#icon-on"></use>
+          </svg>
+          <svg class="icon" >
+            <use xlink:href="#icon-baidu"></use>
+        </svg>
+        </div>
+        <div class="google" style="display: none;">
+          <svg class="icon" >
+            <use xlink:href="#icon-off"></use>
+          </svg>
+          <svg class="icon" >
+            <use xlink:href="#icon-google"></use>
+        </svg>
+        </div>
+      </div>
+      <div class="searchlogo">
+        <img src="images/baidu.png" alt="" class="baidu_big">
+        <img src="images/google.png" alt="" class="google_big" style="display: none;">
+      </div>
       <form class="searchForm" method="get" action="https://www.baidu.com/s">
         <input name="wd" type="text" />
         <button type="submit">搜索</button>
@@ -40,8 +62,9 @@
         </li>
       </ul>
     </main>
-    <script src="//at.alicdn.com/t/font_2309851_1j2c783ys2j.js"></script>
+    <script src="//at.alicdn.com/t/font_2309851_17qf31leq55.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
+
